@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f8f4ef"><title>Agendar horário — Amanda Beauty</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="agenda"><div id="site-header"></div><main>
+  <section class="booking-page wrap"><div class="booking-intro"><span class="eyebrow">um tempinho só seu</span><h1>Vamos achar<br><em>seu momento?</em></h1><p>Escolha o serviço e o horário que combinam com você. A gente confirma tudinho em seguida.</p><div class="booking-note"><span>✳</span><p><b>Um carinho extra</b><br>Água, café ou chá? Aqui você escolhe como começar.</p></div><img src="assets/makeup-artista.jpeg" alt="Profissional realizando maquiagem em sua cliente"></div>
+    <form class="booking-form" id="booking-form"><div class="form-heading"><span class="step-number">01</span><div><span class="eyebrow">reserva online</span><h2>Seu agendamento</h2></div></div>
+      <label for="booking-service">Qual serviço você quer?</label><select id="booking-service" name="service" required><option value="">Selecione um serviço</option><option>Corte & escova</option><option>Cor & iluminação</option><option>Make social</option><option>Make & penteado</option><option>Manicure & pedicure</option><option>Skin care facial</option></select>
+      <div class="form-row"><div><label for="booking-date">Qual dia?</label><input id="booking-date" type="date" name="date" required></div><div><label for="booking-time">Qual horário?</label><select id="booking-time" name="time" required><option value="">Escolha</option><option>09:00</option><option>10:30</option><option>12:00</option><option>14:00</option><option>15:30</option><option>17:00</option></select></div></div>
+      <label for="booking-name">Como podemos te chamar?</label><input id="booking-name" name="name" type="text" placeholder="Seu nome" autocomplete="name" required>
+      <label for="booking-phone">Seu WhatsApp</label><input id="booking-phone" name="phone" type="tel" placeholder="(11) 99999-9999" autocomplete="tel" required>
+      <label for="booking-notes">Quer contar mais alguma coisa? <span class="optional">opcional</span></label><textarea id="booking-notes" name="notes" rows="3" placeholder="Alguma preferência ou dúvida?"></textarea>
+      <button class="button button-dark form-submit" type="submit">Solicitar horário <span>↗</span></button><p class="form-legal">Ao enviar, nossa equipe entra em contato para confirmar sua reserva.</p><div class="form-feedback" role="status" aria-live="polite"></div>
+    </form></section>
+</main><div id="site-footer"></div><script src="app.js"></script></body></html>
+
